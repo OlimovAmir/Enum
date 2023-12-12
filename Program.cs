@@ -1,5 +1,7 @@
 ﻿
 
+using Enum;
+
 class Program
 {
     static void Main(string[] args)
@@ -19,5 +21,12 @@ class Program
                 Console.WriteLine("Вы нажали Enter");
             }
         }
+        
+        Enum.ClassDayOfWeek classDayOfWeek = new Enum.ClassDayOfWeek();
+               
+
+        ClassDayOfWeek.DayOfWeek day = ClassDayOfWeek.DayOfWeek.Monday;
+        Console.WriteLine(day);
+
     }
 }
