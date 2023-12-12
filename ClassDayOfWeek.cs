@@ -8,9 +8,9 @@ namespace Enum
 {
     public class ClassDayOfWeek
     {
-        public enum DayOfWeek 
+        public enum DayOfWeek : byte
         {
-            Monday,
+            Monday = 1,
             Tuesday,
             Wednesday,
             Thursday,
@@ -22,8 +22,13 @@ namespace Enum
         public void getTypeEnum()
         {
             Type enumType = typeof(DayOfWeek);
+            //TypeCode typeCode = Type.GetTypeCode(enumType);
 
-            Console.WriteLine(enumType); // Output: EnumExample.ClassDayOfWeek+DayOfWeek
+            Console.WriteLine(Type.GetTypeCode(enumType)); // Output: Int32
+
+            Console.WriteLine((DayOfWeek)3);
+            Console.WriteLine((byte)DayOfWeek.Sunday);
+
         }
     }
 }
