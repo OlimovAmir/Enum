@@ -19,9 +19,11 @@ namespace Enum
             Sunday
         }
 
-        public void getTypeData()
+        public void getTypeEnum()
         {
+            Type enumType = typeof(DayOfWeek);
 
+            Console.WriteLine(enumType); // Output: EnumExample.ClassDayOfWeek+DayOfWeek
         }
     }
 }
