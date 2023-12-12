@@ -18,5 +18,10 @@ namespace Enum
             Saturday,
             Sunday
         }
+
+        public void getTypeData()
+        {
+
+        }
     }
 }

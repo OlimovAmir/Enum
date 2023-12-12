@@ -26,7 +26,11 @@ class Program
                
 
         ClassDayOfWeek.DayOfWeek day = ClassDayOfWeek.DayOfWeek.Monday;
+        
         Console.WriteLine(day);
+
+        Type enumType = typeof(ClassDayOfWeek.DayOfWeek);
+        Console.WriteLine(enumType);
 
     }
 }
